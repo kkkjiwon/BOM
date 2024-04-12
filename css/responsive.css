@@ -8,14 +8,16 @@
   .top-icon {
     font-size: 2rem;
   }
+  nav .item,
+  .dropdown a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  nav {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 768px) {
-  .nav-bar {
-    display: block;
-    font-size: 3rem;
-  }
-  .nav,
-  .icon {
-    display: none;
-  }
+  /* 헤더 어떻게 할 건지 */
 }
