@@ -43,8 +43,6 @@ body {
 }
 .inner {
   width: 1200px;
-  background-color: pink;
-  height: 500px;
   margin: 0 auto;
 }
 /* **********************************************
