@@ -1,248 +1,32 @@
-@charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import "font/SCDream3.otf";
-@import "font/SCDream5.otf";
-@import "font/SCDream8.otf";
-/* 
-피치 : #FFBE98
-베이지 : #FFF8E9;
-그린  : #589856;
-회색 : #3A3C3B;
- */
+@import "style.css";
 
-a {
-  color: #3a3c3b;
-  text-decoration: none;
-}
-img {
-  border: 0;
-  vertical-align: middle;
-}
-html {
-  font-size: 10px;
-}
-html.active {
-  overflow: hidden;
-}
-body {
-  font-family: "S-CoreDream", "Montserrat", sans-serif;
-  line-height: 1;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #3a3c3b;
-  word-break: keep-all;
-  height: 3000px;
-  background-color: beige;
-}
+/* 비주얼 시작 ********************************************** *********************************************/
 
-/* **********************************************
-전체 레이아웃 */
-.wrap {
-  position: relative;
-  display: block;
-}
-.inner {
-  width: 1200px;
-  background-color: pink;
-  height: 500px;
-  margin: 0 auto;
-}
-/* **********************************************
-/* 공통 */
-/* 타이틀 */
-.title {
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: center;
-  margin-top: 50px;
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
+/* 비주얼 끝끝 ********************************************** *********************************************/
 
-/* 버튼 */
-/* <div class="btn btn--white">view more</div> */
-.btn {
-  width: 130px;
-  padding: 10px;
-  border: 2px solid #ffbe98;
-  border-radius: 3rem;
-  color: #ffbe98;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  cursor: pointer;
-  display: block;
-  transition: 0.4s;
-  margin-top: 100px;
-}
-.btn:hover {
-  color: white;
-  background-color: #ffbe98;
-}
-.btn.btn--reverse {
-  color: #fff;
-  background-color: #ffbe98;
-}
-.btn.btn--reverse:hover {
-  background-color: transparent;
-  color: #ffbe98;
-}
-.btn.btn--white {
-  color: #fff;
-  border-color: #fff;
-}
-.btn.btn--white:hover {
-  color: #ffbe98;
-  background-color: #fff;
-}
-/* 공통 끝 **********************************************
-/*상단 */
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  width: 100%;
-  height: 100px;
-  background-color: #fff;
-  padding: 0 60px;
+/*  메인 >> 브랜드 소개  시작 ********************************************** *********************************************/
 
-  z-index: 9;
-  transition: all 0.5s;
-}
-header > .top-menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: 500;
-  color: #589856;
-}
-/* 로고 */
-.logo {
-  display: block;
-  width: 125px;
-  height: 30px;
-  background: url("../images/logo.png") no-repeat center;
-  background-size: cover;
-  transition: all 0.5s;
-}
-/* 메뉴 */
-.top-menu li ul.top-icon {
-  display: flex;
-  gap: 1rem;
-  font-size: 4rem;
-}
-.top-menu li ul.top-icon li a {
-  color: #589856;
-}
-.xi-apps {
-  display: none;
-}
-.gnb {
-  display: flex;
-}
-.gnb li {
-  display: flex;
-  padding: 1.5rem;
-}
-.gnb li a {
-  color: #589856;
-}
-.gnb li a span {
-  position: relative;
-}
-.gnb li a span::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  opacity: 0;
-  background-color: #589856;
-  transition: all 0.5s;
-}
-.gnb li a:hover span::after {
-  width: 100%;
-  opacity: 1;
-}
+/*  메인 >> 브랜드 소개  끝끝 ********************************************** *********************************************/
 
-/* **********************************************
-모바일 메뉴 햄버거 */
-.mbt {
-  display: none;
-  width: 30px;
-  height: 22px;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-}
-.mbt span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #222;
-}
 
-/* **********************************************
-모바일 메뉴 리스트 */
-.nav-mb {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 80%;
-  padding-top: 80px;
-  max-width: 400px;
-  height: 100%;
-  background: #fff;
-  left: auto;
-  transform: none;
-  overflow-y: auto;
-  transition: all ease 0.6s;
-}
-.nav-mb.active {
-  right: 0;
-  opacity: 1;
-  z-index: 99;
-}
-.nav-mb-gnb {
-  margin: 0 10%;
-}
-.nav-mb-gnb li {
-  line-height: 67px;
-  border-bottom: 1px solid #e8e8e8;
-}
-.nav-mb-gnb li a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  text-align: left;
-  font-size: 16px;
-  color: #000;
-}
+/* 프로그램 시작 ********************************************** *********************************************/
 
-/* **********************************************
-네비 눌렀을 때 바탕 검정 */
-#gnb_bg {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all ease 0.3s;
-}
-#gnb_bg.active {
-  opacity: 1;
-  z-index: 1;
-}
+/* 프로그램 끝끝 ********************************************** *********************************************/
 
-/* 메인*/
+
+
+/* 이달의 영상 시작 ********************************************** *********************************************/
+
+/* 이달의 영상 끝끝 ********************************************** *********************************************/
+
+
+/* 편지 시작 ********************************************** *********************************************/
+
+/* 편지 끝끝 ********************************************** *********************************************/
+
+
+/* 인스타그램 시작 ********************************************** *********************************************/
+
+/* 인스타그램 끝끝 ********************************************** *********************************************/
+
