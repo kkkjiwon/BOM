@@ -1,5 +1,21 @@
 @charset "utf-8";
-@media screen and (max-width:1200px){
-
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 5%;
+    height: 70px;
+  }
+  .gnb a,
+  .top-icon {
+    font-size: 2rem;
+  }
 }
-
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    display: block;
+    font-size: 3rem;
+  }
+  .nav,
+  .icon {
+    display: none;
+  }
+}
