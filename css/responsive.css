@@ -1,5 +1,23 @@
 @charset "utf-8";
-@media screen and (max-width:1200px){
-
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 5%;
+    height: 70px;
+  }
+  .gnb a,
+  .top-icon {
+    font-size: 2rem;
+  }
+  nav .item,
+  .dropdown a {
+    font-size: 1.5rem;
+  }
 }
-
+@media screen and (max-width: 900px) {
+  nav {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* 헤더 어떻게 할 건지 */
+}
