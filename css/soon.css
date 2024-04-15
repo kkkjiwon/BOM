@@ -1,6 +1,7 @@
 @import "style.css";
 
 /* 비주얼 시작 ********************************************** *********************************************/
+<<<<<<< HEAD
 
 /* 비주얼 끝끝 ********************************************** *********************************************/
 
@@ -30,3 +31,192 @@
 
 /* 인스타그램 끝끝 ********************************************** *********************************************/
 
+=======
+.s_vistual {
+  position: relative;
+}
+.s_vistual > .sw-vistual {
+  width: 100%;
+  height: 100%;
+}
+.s_vistual > .sw-vistual > .swiper-wrapper > .swiper-slide {
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s_vistual > .sw-vistual > .swiper-wrapper > .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 페이지 네이션 */
+.swiper-scrollbar {
+  width: 50%;
+}
+/*  메인 >> 브랜드 소개  시작 ********************************************** *********************************************/
+.s_brandAbout > .inner img {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+/* 프로그램 시작 ********************************************** *********************************************/
+.s_program {
+  position: relative;
+  background-color: var(--bg-color);
+  padding-bottom: 3rem;
+}
+.s_program > .sw-program {
+  width: 100%;
+  height: 100%;
+  padding: 0px 60px;
+  position: relative;
+}
+.s_program > .sw-program > .swiper-wrapper > .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.s_program_bg {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.s_program > .sw-program > .swiper-wrapper > .swiper-slide > a > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.s_program_des {
+  text-align: left;
+  padding: 2rem 1rem;
+  font-family: "S-CoreDream";
+}
+.s_program_tit {
+  font-weight: bold;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.s_program_txt {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.s_program > .btn {
+  margin: 50px auto 30px;
+}
+/* 이달의 영상 시작 ********************************************** *********************************************/
+.s_Mentor {
+  /* background-color: pink; */
+}
+.s_Mentor > .inner {
+    background-color: var( --bg-color);
+}
+.s_Mentor_area {
+  /* background-color: lightgoldenrodyellow; */
+  margin: 0 auto;
+  position: relative;
+  max-width: 800px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+}
+.s_Mentor_area img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.s_Mentor_des {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.s_Mentor_des .tit {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-family: "S-CoreDream";
+}
+.s_Mentor_des .tit2 {
+    font-size: 1.8rem;
+    padding: 3rem 0 0.5rem;
+}
+.s_Mentor_des > .btn {
+  margin-top: 50px;
+}
+/* 편지 시작 ********************************************** *********************************************/
+.s_letter {
+
+}
+.s_letter > .inner {
+    background-color: var(--bg-color);
+    display: flex;
+}
+.s_letter_box{
+    flex-basis: 50%;
+}
+.s_letter_box > .btn {
+    margin: 50px auto 0;
+}
+.s_letter_left {
+    background-color: var(--side-color);
+}
+.s_letter_left img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.s_letter_right {
+    margin: auto;
+}
+.s_letter_right .tit2{
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+.s_letter_right .tit {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+/* 인스타그램 시작 ********************************************** *********************************************/
+.s_instagram {
+    width: 100%;
+    padding-bottom: 100px;
+}
+.s_instagram > .inner {
+
+}
+.s_instagram_img_wrap {
+    padding: 3rem 0;
+    display: flex;
+    gap: 1%;
+
+}
+
+.s_instagram  a  img {
+ width: 100%;
+ height: 100%;
+}
+.s_instagram .btn {
+    margin: 30px auto;
+}
+>>>>>>> 3a87bdefff24b8071c861400009d38c15f1d4a8e
