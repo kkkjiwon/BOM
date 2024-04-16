@@ -20,7 +20,7 @@ html {
   width: 100%;
   min-width: 320px;
 }
-.t_signup-container {
+.t_container {
   position: relative;
   max-width: 540px;
   min-width: 320px;
@@ -45,22 +45,22 @@ html {
   max-width: 430px;
   min-width: 240px;
 }
-.t_signup-h1 {
+h1 {
   margin: 10px auto;
   text-align: center;
   font-size: 30px;
 }
-.t_signup-ul,
-.t_signup-li {
+ul,
+li {
   width: 100%;
   max-width: 430px;
   min-width: 240px;
   margin-top: 20px;
 }
-.t_signup-li:first-child {
+li:first-child {
   margin-top: 0;
 }
-.t_signup-ul p {
+ul p {
   font-size: 16px;
   font-weight: 700;
   width: 100%;
@@ -81,7 +81,7 @@ html {
   display: flex;
   flex-direction: column;
 }
-.t_signup-bt {
+button {
   width: 90px;
   height: 25px;
   margin-top: 10px;
@@ -122,7 +122,7 @@ html {
   accent-color: #589856;
   
 }
-.t_submit-bt {
+.submit-bt {
   padding: 10px;
   background-color: #589856;
   
@@ -136,6 +136,6 @@ html {
   font-size: 22px;
   font-weight: 700;
 }
-.t_submit-bt a{
+.submit-bt a{
   color: #fff;
 }
