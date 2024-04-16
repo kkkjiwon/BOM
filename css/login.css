@@ -20,7 +20,7 @@ html{
   width: 100%;
   min-width: 320px;
 }
-  .t_container {
+  .t_login-container {
     position: relative;
     max-width: 540px;
     min-width: 320px;
@@ -36,7 +36,7 @@ html{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
-  form {
+  #t_login-form {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -46,7 +46,7 @@ html{
     max-width: 430px;
     min-width: 240px;
   }
-.t_logo{
+.t_login-logo{
     margin: 50px auto;
     text-align: center;
     font-size: 30px;
@@ -69,7 +69,7 @@ html{
     margin-top: 30px;
     margin-bottom: 30px;
   }
-.t_check{
+.t_login-check{
     margin-top: 20px;
     margin-bottom: 30px;
     color: #3a3c3b;
@@ -99,7 +99,7 @@ html{
   button:hover {
     background-color: #447242;
   } 
-  .t_hr-sect {
+  .t_login-hr-sect {
 	display: flex;
 	flex-basis: 100%;
 	align-items: center;
@@ -107,8 +107,8 @@ html{
 	font-size: 12px;
 	margin-top: 40px;
 }
-.t_hr-sect::before,
-.t_hr-sect::after {
+.t_login-hr-sect::before,
+.t_login-hr-sect::after {
 	content: "";
 	flex-grow: 1;
 	background: #3a3c3b;
@@ -123,18 +123,18 @@ html{
     color: #3a3c3b;
    
   }
-  .t_li-txt{
+  .t_login-li-txt{
     color: #589856;
     font-weight: 600;
     cursor: pointer;
     font-size: 16px;
   }
-  .t_li-txt a {
+  .t_login-li-txt a {
     color: #599B56;
     font-weight: 600;
     cursor: pointer;
   }
   
-  .t_li-sns{
+  .t_login-li-sns{
     cursor: pointer;
   }
