@@ -132,10 +132,10 @@ line-height: 30px;
 /* 로고 */
 .logo {
   display: block;
-  width: 100px;
-  height: 30px;
-  background: url("../images/logo.png") no-repeat center;
-  background-size: fill;
+  width: 200px;
+  height: 50px;
+  background: url("../images/logo-2.png") no-repeat center;
+  background-size: contain;
   transition: all 0.5s;
 }
 nav {
