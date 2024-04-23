@@ -1,8 +1,5 @@
 @charset "utf-8";
 @import "style.css";
-@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
-
-
 
 /* 비주얼 시작 ********************************************** *********************************************/
 .s_vistual {
@@ -16,6 +13,7 @@
   text-align: center;
   font-size: 2rem;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,37 +53,24 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-
 }
 .s_program_bg {
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
 }
-.s_program_bg_img {
-  width: 100%;
-  max-height: 300px;
-  overflow: hidden;
-  border-radius: 10px 10px 0 0;
-}
-.s_program_bg_img img {
+.s_program > .sw-program > .swiper-wrapper > .swiper-slide > a > img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-.s_program > .sw-program > .swiper-wrapper > .swiper-slide:hover img {
-  transform: scale(1.2);
-  transition: transform 0.3s ease; /* 선택적으로 부드러운 전환 효과를 추가할 수 있습니다. */
-}
-
 .s_program_des {
   text-align: left;
-  padding: 2rem;
-  font-family: var(--main-ko-font)
+  padding: 2rem 1rem;
+  font-family: "S-CoreDream";
 }
 .s_program_tit {
   font-weight: bold;
@@ -102,28 +87,47 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.s_program > .s_btn {
+.s_program > .btn {
   margin: 50px auto 30px;
 }
 /* 이달의 영상 시작 ********************************************** *********************************************/
 .s_Mentor {
-  font-family: var(--main-ko-font);
-  background-color: #fffcf6;
+  font-family: "S-CoreDream";
 }
-.s_Mentor .inner {
-  /* background-color: pink; */
+.s_Mentor > .inner {
+  background-color: var(--bg-color);
 }
 .s_Mentor_area {
+  /* background-color: lightgoldenrodyellow; */
+  margin: 0 auto;
+  position: relative;
+  max-width: 800px;
+  height: 500px;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
 }
-
+.s_Mentor_area img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.s_Mentor_area img {
+  transition: all 1s 0.2s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.s_Mentor_des {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
 .s_Mentor_des .tit {
-  font-weight: 600;
   font-size: 3rem;
   line-height: 1.2;
+  font-family: "S-CoreDream";
   opacity: 0;
   transform: translateY(100px);
 }
@@ -133,20 +137,18 @@
   opacity: 0;
   transform: translateY(100px);
 }
-.s_Mentor_des .name > span {
-  font-size: 1.8rem;
-}
 .s_Mentor_des .tit2 {
   font-size: 1.8rem;
   padding: 3rem 0 0.5rem;
   opacity: 0;
   transform: translateY(100px);
 }
-.s_Mentor_des > .s_btn {
-  margin-top: 10%;
+.s_Mentor_des > .btn {
+  margin-top: 50px;
   opacity: 0;
   transform: translateY(100px);
 }
+/* 글씨 효과 */
 .s_Mentor_des.active .tit {
   transition: all 1s 0.2s;
   opacity: 1;
@@ -162,14 +164,15 @@
   opacity: 1;
   transform: translateY(0);
 }
-.s_Mentor_des.active > .s_btn {
+.s_Mentor_des.active > .btn {
   transition: all 1s 0.5s;
   opacity: 1;
   transform: translateY(0);
 }
 
 /* 편지 시작 ********************************************** *********************************************/
-
+.s_letter {
+}
 .s_letter > .inner {
   background-color: var(--bg-color);
   display: flex;
@@ -177,8 +180,8 @@
 .s_letter_box {
   flex-basis: 50%;
 }
-.s_letter_box > .s_btn {
-  margin: 8% auto 0;
+.s_letter_box > .btn {
+  margin: 50px auto 0;
 }
 .s_letter_left {
   background-color: var(--side-color);
@@ -188,11 +191,10 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding: 2% 2% 0 2%;
+  padding: 1rem 1rem 0 1rem;
 }
 .s_letter_right {
   margin: auto;
-  font-family: var(--main-ko-font);
 }
 .s_letter_right .tit2 {
   font-size: 1.8rem;
@@ -204,12 +206,12 @@
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 1rem;
   line-height: 1.5;
   opacity: 0;
   transform: translateY(100px);
 }
-.s_letter_right .s_btn {
+.s_letter_right .btn {
   opacity: 0;
   transform: translateY(100px);
 }
@@ -223,7 +225,7 @@
   opacity: 1;
   transform: translateY(0);
 }
-.s_letter_right.active .s_btn {
+.s_letter_right.active .btn {
   transition: all 1s 0.4s;
   opacity: 1;
   transform: translateY(0);
@@ -233,15 +235,18 @@
   width: 100%;
   padding-bottom: 100px;
 }
+.s_instagram > .inner {
+}
 .s_instagram_img_wrap {
   padding: 3rem 0;
   display: flex;
   gap: 1%;
 }
+
 .s_instagram a img {
   width: 100%;
   height: 100%;
 }
-.s_instagram .s_btn {
+.s_instagram .btn {
   margin: 30px auto;
 }
