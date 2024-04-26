@@ -3,6 +3,12 @@
 @import url(jiwon.css);
 @import url(taehun.css);
 @import url(font.css);
+@font-face {
+  font-family: "UhBeeSe_hyun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 a {color: #3a3c3b;text-decoration: none;}
 img {border: 0;vertical-align: middle;}
@@ -33,6 +39,7 @@ body {
   --font-color: #3A3C3B;
   --main-ko-font: "S-CoreDream-3Light";
   --main-en-font: "Montserrat";
+  --side-ko-font:  "UhBeeSe_hyun";
 }
 /* 타이틀 */
 .title {
@@ -140,6 +147,9 @@ body {
 .logo {
   display: block;
   padding: 8px 12px;
+  width: 150px;
+}
+.logo img {
   width: 100%;
 }
 nav {
@@ -415,6 +425,8 @@ footer > .inner > div {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 footer > .inner > div > a {
   color: #fff;
@@ -426,5 +438,8 @@ font-weight: bold;
 }
 footer > .inner > .socials > a:hover img{
   scale: 1.2;
+}
+.copyright {
+  font-family: var(--main-en-font);
 }
 /* 풋터 끝 ********************************************** *********************************************/

@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#FF782C" />
     <meta property="og:title" content="내마음봄: 내면의 변화를 만드는 플랫폼" />
     <meta property="og:description" content="나답게 성장하는 사람들이 만들어가는 프로젝트" />
-    <meta property="og:image" content="https://nicetomeetme.kr/images/share/share-image.png" />
+    <meta property="og:image" content="images/share-image.png" />
     <!-- <meta name="naver-site-verification" content="ac83739dee8db19366947125d2910ea6f02f76a2" /> -->
     <meta name="description" content="나답게 성장하는 사람들이 만들어가는 프로젝트" />
     <!-- Twitter -->
@@ -66,8 +66,7 @@
             <a class="nav__item" href="index.html">Home</a>
             <a class="nav__item" href="brand.html">About</a>
             <a class="nav__item" href="program.html">Program</a>
-            <div class="nav__item" href="playground.html">
-              Play
+            <div class="nav__item" href="playground.html">Playground
               <div class="nav__item__dropdown">
                 <div>
                   <a href="playground.html">Notice</a>
@@ -90,10 +89,10 @@
                       <!-- 모바일 메뉴 리스트 -->
           <div class="nav-mb">
             <ul class="nav-mb-gnb">
-              <li class="menu"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Program</a></li>
-              <li class="menu"><a href="#">Play<span class="material-symbols-outlined">expand_more</span></a>
+              <li><a href="#index.html">Home</a></li>
+              <li><a href="#brand.html">About</a></li>
+              <li><a href="#program.html">Program</a></li>
+              <li class="menu"><a href="#playground.html">Playground<span class="material-symbols-outlined">expand_more</span></a>
                 <ul class="hide">
                   <li><a href="">Notice</a></li>
                   <li><a href="">talk</a></li>
@@ -104,66 +103,53 @@
           </div>
           </div>
         </div>
-                <!-- 오버레이 -->
-                <div class="overlay"></div>
+        <!-- 오버레이 -->
+        <div class="overlay"></div>
       </header>
-      <script>
-
-  // 상단 스크롤 기능
-  const header = document.querySelector(".header");
-  const mbt = document.querySelector(".mbt");
-  const navMb = document.querySelector(".nav-mb");
-  const overlay = document.querySelector(".overlay");
-  
-  // 햄버거 버튼 클릭 이벤트
-  mbt.addEventListener("click", function () {
-    const state = this.classList.contains("ani");
-    if (state) {
-      this.classList.remove("ani");
-      navMb.classList.remove("active");
-      overlay.classList.remove("active");
-    } else {
-      this.classList.add("ani");
-      navMb.classList.add("active");
-      overlay.classList.add("active");
-    }
-  });
-
-  // 오버레이 클릭 시 메뉴 닫기
-  overlay.addEventListener("click", function () {
-    mbt.classList.remove("ani");
-    navMb.classList.remove("active");
-    overlay.classList.remove("active");
-  });
-
-      </script>
       <!-- 비주얼 -->
-      <section class="s_vistual">
+      <!-- <section class="s_vistual">
         <div class="swiper sw-vistual">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#">
+              <a href="#program-2.html">
                 <img src="images/soon/main1.png" alt="메인1" />
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#">
+              <a href="#program-2.html">
                 <img src="images/soon/main2.png" alt="메인2" />
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#">
+              <a href="#program-2.html">
                 <img src="images/soon/main3.png" alt="메인3" />
               </a>
             </div>
           </div>
         </div>
         <div class="swiper-scrollbar"></div>
-      </section>
-      <!-- 메인 >> 브랜드 소개 -->
+      </section> -->
+      <!-- 브랜드 소개 -->
       <section class="s_brandAbout">
-        <div class="inner">
-          <img src="images/soon/about.png" alt="브랜드 메인에서 소개" />
+        <div class="s_brandAbout_logodes">
+          <div class="inner">
+            <div class="s_brandAbout_left">
+              <div class="s_brandAbout_left_tit" data-aos="slide-up" data-aos-duration="1000" data-aos-once="false">see + spring</div>
+              <div class="s_brandAbout_left_txt" data-aos="slide-up" data-aos-duration="1000" data-aos-once="false">내 마음을 봄 + 마음의 온도는 봄</div>
+            </div>
+            <div class="s_brandAbout_right">
+              <img src="images/soon/logo300.png" alt="logo" />
+            </div>
+          </div>
+          <div class="s_brandAbout_roundBg" alt="둥근바탕"></div>
+        </div>
+        <div class="s_brandAbout_ch3">
+          <div class="inner">
+            <div class="s_brandAbout_ch3_img">
+              <img src="images/soon/ch3500.png" alt="캐릭터3인방" />
+            </div>
+            <div class="s_brandAbout_ch3_tit">내면의 변화를 일으키는 힐링 플랫폼</div>
+          </div>
         </div>
       </section>
       <!-- 프로그램 -->
@@ -172,9 +158,8 @@
         <div class="swiper sw-program">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#" class="s_program_bg">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
-
                 <img src="images/program/draw15min.jpg" alt="draw15min" />
               </div>
                 <div class="s_program_des">
@@ -184,7 +169,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="s_program_bg">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                 <img src="images/program/music.JPG" alt="music" />
                 </div>
@@ -195,7 +180,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="s_program_bg">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                 <img src="images/program/myeongsang.JPG" alt="myeongsang" />
                 </div>
@@ -206,7 +191,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="s_program_bg">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                 <img src="images/program/cheer300.jpg" alt="cheer" />
                 </div>
@@ -217,7 +202,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="s_program_bg">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                 <img src="images/program/plants300.jpg" alt="plants" />
                 </div>
@@ -228,7 +213,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="s_program_bg">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                 <img src="images/program/positive.jpg" alt="positive" />
                 </div>
@@ -239,8 +224,8 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <div class="s_program_bg_img">
-              <a href="#" class="s_program_bg">
+              <a href="#program-2.html" class="s_program_bg">
+                <div class="s_program_bg_img">
                 <img src="images/program/food300.jpg" alt="food" />
               </div>
                 <div class="s_program_des">
@@ -259,14 +244,11 @@
         <div class="inner">
           <div class="s_Mentor_area">
             <div class="s_Mentor_area_left">
-            <a href="#">
               <div class="s_Mentor_des">
                 <div class="tit">뭘 해도 행복한 사람과<br />불만인 사람의 말버릇</div>
                 <div class="tit2">리플러스인간연구소</div>
                 <div class="name">박재연 <span>소장님</span></div>
-                <div class="s_btn">MORE VIEW</div>
               </div>
-            </a>
           </div>
           <div class="s_Mentor_area_right">
             <img src="images//soon/park.png" alt="박재현소장" />
@@ -274,38 +256,6 @@
           </div>
         </div>
       </section>
-      <!-- 편지 -->
-      <div class="s_letter">
-        <div class="title">letter</div>
-        <div class="inner">
-          <div class="s_letter_box s_letter_left">
-            <img src="images/soon/drew.png" alt="드로운앤드류" />
-          </div>
-          <div class="s_letter_box s_letter_right">
-            <div class="tit2">퇴사한 선배에게 받는 답장</div>
-            <div class="tit">
-              아무리 노력해도<br />
-              긍정적이기 힘들때
-            </div>
-            <div class="s_btn s_btn--green">MORE VIEW</div>
-          </div>
-        </div>
-      </div>
-      <!-- 인스타그램 -->
-      <div class="s_instagram">
-        <div class="title">INSTAGRAM</div>
-        <div class="inner">
-          <div class="s_instagram_img_wrap">
-            <a href="#"><img src="images/soon/news.jpg" alt="인스타그램1" /></a>
-            <a href="#"><img src="images/soon/news.jpg" alt="인스타그램1" /></a>
-            <a href="#"><img src="images/soon/news.jpg" alt="인스타그램1" /></a>
-            <a href="#"><img src="images/soon/news.jpg" alt="인스타그램1" /></a>
-            <a href="#"><img src="images/soon/news.jpg" alt="인스타그램1" /></a>
-            <a href="#"><img src="images/soon/news.jpg" alt="인스타그램1" /></a>
-          </div>
-          <div class="s_btn">follow</div>
-        </div>
-      </div>
       <!-- 풋터 -->
       <footer>
         <div class="inner">
@@ -317,10 +267,10 @@
           <div class="text">
             <a href="#">개인정보처리방침</a>
             <a href="#">이용약관</a>
-            <a href="#">공지사항</a>
-            <a href="#">커뮤니티</a>
+            <a href="playground.html">공지사항</a>
+            <a href="playground.html">커뮤니티</a>
           </div>
-          <div class="copyright">2024 all rights reserved by spring</div>
+          <div class="copyright">2024 all rights reserved by Jiwon & Teahun & Soon</div>
         </div>
       </footer>
     </div>
