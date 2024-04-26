@@ -139,16 +139,8 @@ body {
 }
 .logo {
   display: block;
-<<<<<<< HEAD
   padding: 8px 12px;
   width: 100%;
-=======
-  width: 200px;
-  height: 50px;
-  background: url("../images/logo-2.png") no-repeat center;
-  background-size: contain;
-  transition: all 0.5s;
->>>>>>> acdf2d8157c525270d4c91c157340fe8c68926e5
 }
 nav {
   font-family:  "Montserrat";

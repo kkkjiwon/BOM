@@ -27,7 +27,7 @@
   padding-top: 100px;
   width: 100%;
   height: 450px;
-  background-color: var(--bg-color);
+  background-color: rgb(255, 190, 152);
   text-align: center;
   padding-top: 100px;
 }
@@ -40,13 +40,12 @@
   /* font-family: 'S-CoreDream-3Light'; */
   font-size: 50px;
   font-weight: 700;
-  color: var(--side-color);
 }
 .j_banner h1::after {
   content: "";
   display: block;
   width: 40px;
-  border-bottom: 3px solid var(--side-color);
+  border-bottom: 3px solid #3a3c3ba1;
   margin: 40px auto;
 }
 .j_banner p {
@@ -58,7 +57,7 @@
 .j_banner p:nth-child(2) {
   margin-bottom: 20px;
 }
-/* 프로그램 리스트 ================= */
+/* 프로그램 ================= */
 .J_container {
   font-family: "S-CoreDream-3Light";
 }
@@ -80,13 +79,11 @@
 }
 .j_title {
   font-size: 18px;
-  /* font-weight: bold; */
+  font-weight: bold;
   width: 145px;
   line-height: 50px;
   text-align: center;
-  background-color: #589856;
-  color: #fff;
-  /* border: 2px solid var(--side-color); */
+  background-color: var(--main-color);
   border-radius: 10px;
   margin-bottom: 40px;
 }
@@ -107,7 +104,6 @@
   width: 250px;
   height: 250px;
   border-radius: 10px;
-  border: 1px solid var(--font-color);
   overflow: hidden;
 }
 .j_box .j_top {
@@ -126,33 +122,21 @@
   font-size: 14px;
   font-weight: bold;
   background-color: var(--bg-color);
-  color: var(--font-color);
 }
 /* 참여후기 ================= */
 .j_review {
-  margin-top: 80px;
+  padding-top: 100px;
   width: 100%;
-  height: 700px;
   font-family: "S-CoreDream-3Light";
-  background-color: var(--bg-color);
-}
-.j_review > .inner{
-  width: 1200px;
-  height: 600px;
-  margin: 0 auto;
-  padding-top: 70px;
 }
 .j_rv_top {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 50px; */
 }
 .j_rv_top > .j_title {
   margin-bottom: 0px;
-  background-color: var(--side-color);
-  color: #fff;
 }
   .fa-circle-plus{
     font-size: 40px;
@@ -163,7 +147,6 @@
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
-    
 }
 .j_rv_box{
     width: calc(100% / 4 - 20px);
@@ -180,17 +163,15 @@
     height: 100%;
 }
 .j_rv_box_bt{
-    background-color: #fff;
+    background-color: var(--bg-color);
     width: 100%;
     height: 170px;
     padding: 20px;
-    
 }
 .j_rv_box_bt h3{
     font-size: 10px;
     font-weight: bold;
     padding-bottom: 15px;
-    color: var(--side-color);
 }
 .j_rv_box_bt p{
     font-size: 12px;
