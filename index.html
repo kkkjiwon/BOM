@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-KXN6FMPR");
-    </script>
-    <!-- End Google Tag Manager -->
     <title>내마음봄</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,9 +18,15 @@
     <meta name="description" content="나답게 성장하는 사람들이 만들어가는 프로젝트" />
     <!-- Twitter -->
     <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <!-- AOS css -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css" />
     <!-- 스와이퍼 css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- XEICON css -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <!-- 폰트어썸 -->
@@ -49,6 +41,8 @@
     <!-- html -->
 
     <!-- Js 연동 -->
+    <!-- aos적용 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script src="js/html5shiv.js"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/respond.min.js"></script>
@@ -56,24 +50,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- 스와이퍼 JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N51KYMNPS5"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N51KYMNPS5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-N51KYMNPS5");
-    </script>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXN6FMPR" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 상단 띠 -->
@@ -174,114 +154,169 @@
           </div>
           <div class="s_brandAbout_roundBg" alt="둥근바탕"></div>
         </div>
-        <div class="s_brandAbout_ch3">
-          <div class="inner">
-            <div class="s_brandAbout_ch3_img">
-              <img src="images/soon/ch3500.png" alt="캐릭터3인방" />
-            </div>
-            <div class="s_brandAbout_ch3_tit">내면의 변화를 일으키는 힐링 플랫폼</div>
-          </div>
-        </div>
       </section>
-      <!-- 프로그램 -->
+      <!-- program -->
       <section class="s_program">
-        <div class="title">program</div>
         <div class="swiper sw-program">
+          <div class="title-area">
+            <div class="title">
+              program
+              <div class="title2">다양한 힐링 방법이 필요하다면?</div>
+            </div>
+            <a href="program.html"><div class="view-more">MORE</div></a>
+          </div>
           <div class="swiper-wrapper">
-            <div class="swiper-slide" id="p_box_1">
-              <a href="#program-2.html" class="s_program_bg" >
+            <div class="swiper-slide">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                   <img src="images/program/draw15min.jpg" alt="draw15min" />
                 </div>
                 <div class="s_program_des">
+                  <div class="s_program_tag"><span>#draw</span><span>#healing</span></div>
                   <div class="s_program_tit">낙서하듯 그리기</div>
                   <div class="s_program_txt">가볍게 시작하여 완벽주의를 깨는 시간</div>
                 </div>
               </a>
             </div>
-            <div class="swiper-slide" id="p_box_2">
-              <a href="#program-2.html" class="s_program_bg" >
+            <div class="swiper-slide">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
-                  <img src="images/program/color300.png" alt="color" />
+                  <img src="images/program/music.JPG" alt="music" />
                 </div>
                 <div class="s_program_des">
-                  <div class="s_program_tit">번아웃을 극복하는 컬러 명상</div>
-                  <div class="s_program_txt">지친 마음에 에너지 채우는 컬러 처방</div>
+                  <div class="s_program_tag"><span>#Music</span></div>
+                  <div class="s_program_tit">나만의 플레이리스트</div>
+                  <div class="s_program_txt">음악으로 나의 세계를 확장하고 싶은 나</div>
                 </div>
               </a>
             </div>
-            <div class="swiper-slide" id="p_box_3">
-              <a href="#program-2.html" class="s_program_bg" >
+            <div class="swiper-slide">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                   <img src="images/program/myeongsang.JPG" alt="myeongsang" />
                 </div>
                 <div class="s_program_des">
+                  <div class="s_program_tag"><span>#meditation</span><span>#healing</span></div>
                   <div class="s_program_tit">하루 10분 명상하기</div>
-                  <div class="s_program_txt">불안함에 이것저것 하지 말고 나에게 집중하기</div>
+                  <div class="s_program_txt">하루 한 번 오로지 나에게 집중하기</div>
                 </div>
               </a>
             </div>
-            <div class="swiper-slide" id="p_box_4">
-              <a href="#program-2.html" class="s_program_bg" >
+            <div class="swiper-slide">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                   <img src="images/program/cheer300.jpg" alt="cheer" />
                 </div>
                 <div class="s_program_des">
+                  <div class="s_program_tag"><span>#write</span><span>#Positive</span></div>
                   <div class="s_program_tit">긍정카드 필사&감사일기</div>
                   <div class="s_program_txt">내 안의 긍정성을 깨우는 나</div>
                 </div>
               </a>
             </div>
-            <div class="swiper-slide" id="p_box_5">
-              <a href="#program-2.html" class="s_program_bg" >
+            <div class="swiper-slide">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                   <img src="images/program/plants300.jpg" alt="plants" />
                 </div>
                 <div class="s_program_des">
+                  <div class="s_program_tag"><span>#plant</span><span>#thanks</span></div>
                   <div class="s_program_tit">식물 산책&감사일기</div>
                   <div class="s_program_txt">평가하지 않는 식물에서 위로받기</div>
                 </div>
               </a>
             </div>
-            <div class="swiper-slide" id="p_box_6">
-              <a href="#program-2.html" class="s_program_bg" >
+            <div class="swiper-slide">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                   <img src="images/program/positive.jpg" alt="positive" />
                 </div>
                 <div class="s_program_des">
-                  <div class="s_program_tit">오늘의 긍정적인 순간 수집</div>
-                  <div class="s_program_txt">SNS로 비교하는 대신, 내 하루의 좋은 점 찾기</div>
+                  <div class="s_program_tag"><span>#Positive</span></div>
+                  <div class="s_program_tit">긍정적인 순간 수집</div>
+                  <div class="s_program_txt">내 하루의 좋은 점 찾기</div>
                 </div>
               </a>
             </div>
-            <div class="swiper-slide" id="p_box_7">
-              <a href="#program-2.html" class="s_program_bg" >
+            <div class="swiper-slide">
+              <a href="#program-2.html" class="s_program_bg">
                 <div class="s_program_bg_img">
                   <img src="images/program/food300.jpg" alt="food" />
                 </div>
                 <div class="s_program_des">
+                  <div class="s_program_tag"><span>#food</span><span>#takecare</span></div>
                   <div class="s_program_tit">제철 음식으로 나 돌보기</div>
-                  <div class="s_program_txt">한 끼라도 나를 위한 식사 선택하기</div>
+                  <div class="s_program_txt">나를 위한 정성스런 한끼 식사</div>
                 </div>
               </a>
             </div>
           </div>
         </div>
-        <div class="s_btn s_btn--reverse:hover" id="p_bt">more view</div>
+      </section>
+      <!-- 배너 -->
+      <section class="s_banner_ch3">
+        <div class="inner">
+          <div class="s_banner_ch3_img">
+            <img src="images/soon/ch3500.png" alt="캐릭터3인방" />
+          </div>
+          <div class="s_banner_ch3_tit">내면의 변화를 일으키는 힐링 플랫폼</div>
+        </div>
+      </section>
+      <!-- for you -->
+      <section class="s_foryou">
+        <div class="title-area">
+          <div class="inner">
+            <div class="title" style="text-align: center">
+              For you
+              <div class="title2">내마음봄이 처음이라면?</div>
+            </div>
+          </div>
+        </div>
+        <div class="s_foryou_area" style class="background-color:#red">
+          <div class="s_foryou_card" style="--clr: #589856">
+            <div class="s_foryou_card_imgBox">
+              <img src="images/soon/color.jpg" />
+            </div>
+            <div class="s_foryou_card_textBox">
+              <h2>번아웃을 극복하는 컬러 명상</h2>
+              <p>평소 그냥 지나쳤던 색깔을 다시 살피고 떠올리는 과정을 거치다 보면 나에게 일으키는 감정과 생각이 있다는 것을 알게 될거에요.</p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+          <div class="s_foryou_card" style="--clr: #589856">
+            <div class="s_foryou_card_imgBox">
+              <img src="images/soon/positive.jpg" />
+            </div>
+            <div class="s_foryou_card_textBox">
+              <h2>긍정적인 순간 수집</h2>
+              <p>긍정적인 감정에 대해 기록하다 보면 내가 무엇을 좋아하고, 어떤 가치관을 가지고 있는지, 몰랐던 나의 기준을 알 수 있어요.</p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+          <div class="s_foryou_card" style="--clr: #589856">
+            <div class="s_foryou_card_imgBox">
+              <img src="images/soon/myeongsang.jpg" />
+            </div>
+            <div class="s_foryou_card_textBox">
+              <h2>하루 10분 명상하기</h2>
+              <p>명상을 하면서 하루 동안 과열되었던 정신적 감정적 자극들이 평온해지면서 나의 자연스러운 리듬을 인지할 수 있게 될 거예요.</p>
+              <a href="program-2.html">Read More</a>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- 이달의 영상 -->
       <section class="s_Mentor">
-        <div class="title">Mentor</div>
         <div class="inner">
           <div class="s_Mentor_area">
-            <div class="s_Mentor_area_left">
+            <div class="s_Mentor_area_left" data-aos="slide-left" data-aos-duration="1000" data-aos-once="false">
               <div class="s_Mentor_des">
                 <div class="tit">뭘 해도 행복한 사람과<br />불만인 사람의 말버릇</div>
                 <div class="tit2">리플러스인간연구소</div>
                 <div class="name">박재연 <span>소장님</span></div>
               </div>
             </div>
-            <div class="s_Mentor_area_right">
+            <div class="s_Mentor_area_right" data-aos="slide-right" data-aos-duration="1000" data-aos-once="false">
               <img src="images//soon/park.png" alt="박재현소장" />
             </div>
           </div>
@@ -291,55 +326,57 @@
       <div class="t_in-notice-wrap">
         <div class="t_in-container">
           <div class="t_in-header">
-            <div class="title">NOTICE</div>
+            <div class="title-area">
+              <div class="title">NOTICE</div>
+            </div>
           </div>
           <div class="t_in-contents">
             <div class="t_in-contents-main">
               <ul class="t_in-main-info">
                 <!-- <li>1</li> -->
-                <li><p>공지 해요</p></li>
+                <!-- <li><p>공지 해요</p></li>
                 <li>(5월) 이달의 강연 - 리플러스인간연구소 <박재연></li>
                 <li>내마음봄</li>
-                <li>2024.04.26</li>
+                <li>2024.04.26</li> -->
               </ul>
               <ul class="t_in-main-info">
                 <!-- <li>2</li> -->
-                <li><p>공지 해요</p></li>
+                <!-- <li><p>공지 해요</p></li>
                 <li>내마음봄 커뮤니티 가이드라인 안내</li>
                 <li>내마음봄</li>
-                <li>2024.01.01</li>
+                <li>2024.01.01</li> -->
               </ul>
               <ul class="t_in-main-info">
                 <!-- <li>3</li> -->
-                <li><p>수다 해요</p></li>
+                <!-- <li><p>수다 해요</p></li>
                 <li>이번주도 다들 파이팅!</li>
                 <li>바밤바</li>
-                <li>2024.04.30</li>
+                <li>2024.04.30</li> -->
               </ul>
               <ul class="t_in-main-info">
                 <!-- <li>4</li> -->
-                <li><p>수다 해요</p></li>
+                <!-- <li><p>수다 해요</p></li>
                 <li>슬슬 더워지네요</li>
                 <li>민초단</li>
-                <li>2024.04.30</li>
+                <li>2024.04.30</li> -->
               </ul>
               <ul class="t_in-main-info">
                 <!-- <li>5</li> -->
-                <li><p>함께 해요</p></li>
+                <!-- <li><p>함께 해요</p></li>
                 <li>전시 정보 공유해요. 같이 가실분?</li>
                 <li>기역니은디귿</li>
-                <li>2024.04.30</li>
+                <li>2024.04.30</li> -->
               </ul>
             </div>
           </div>
-          <div class="t_in-bottom">
-            <button class="s_btn">More view</button>
-          </div>
+          <div class="t_in-bottom"></div>
         </div>
       </div>
       <!-- 인스타그램 -->
       <div class="t_instagram">
-        <div class="title">INSTAGRAM</div>
+        <div class="title-area">
+          <div class="title">INSTAGRAM</div>
+        </div>
         <div class="t_insta-inner">
           <div class="t_insta-img-wrap">
             <a href="#"><img src="images/taehun/instatoon-1.png" alt="인스타그램1" /></a>
@@ -350,7 +387,6 @@
             <a href="#"><img src="images/taehun/instatoon-6.png" alt="인스타그램6" /></a>
           </div>
         </div>
-        <div class="s_btn">follow</div>
       </div>
       <!-- 풋터 -->
       <footer>

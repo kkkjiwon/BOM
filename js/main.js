@@ -1,4 +1,17 @@
 window.onload = function () {
+  const navBar = document.querySelector("header");
+  let prevScrollPos = window.scrollY;
+  window.addEventListener("scroll", function () {
+    let currScrollPos = window.scrollY;
+  
+    if (currScrollPos > prevScrollPos) {
+      navBar.style.transform = `translateY(-105%)`;
+    } else {
+      navBar.style.transform = `translateY(0%)`;
+    }
+  
+    prevScrollPos = currScrollPos;
+  });
   //상단 스크롤 기능
   const header = document.querySelector(".header");
   const mbt = document.querySelector(".mbt");
@@ -46,15 +59,23 @@ window.onload = function () {
   });
   // s_program
   var swiper = new Swiper(".sw-program", {
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     spaceBetween: 0,
     breakpoints: {
-      1400: {
+      1920: {
+        slidesPerView: 5,
+        spaceBetween: 10,        
+      },
+      1200: {
         slidesPerView: 4,
+        spaceBetween: 10,           
+      }   ,                 
+      1000: {
+        slidesPerView: 3.8,
         spaceBetween: 10,
       },
-      768: {
-        slidesPerView: 3,
+      800: {
+        slidesPerView: 2.2,
         spaceBetween: 10,
       },
       500: {
@@ -62,37 +83,48 @@ window.onload = function () {
         spaceBetween: 10,
       },
     },
-  });
-
-  // 글자 모션
-  var observer = new IntersectionObserver(
-    function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        } else {
-          entry.target.classList.remove("active");
-        }
-      });
+    autoplay: {
+      delay: 5000, // 슬라이드 간의 지연 시간 (밀리초)
+      disableOnInteraction: false, // 사용자 상호 작용 후 자동 재생 비활성화 여부
     },
-    { threshold: 0.5 }
-  );
+  });
+}
+// s_recommend
+var swiper = new Swiper(".sw-recommend", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 3,
+    slideShadows: true
+  },
+  loop: true,
+  pagination: {
+    el: ".sw-recommend-pg",
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 1
+    },
+    1024: {
+      slidesPerView: 2
+    },
+    1560: {
+      slidesPerView: 3
+    }
+  }
+});
 
-  var mentorSection = document.querySelector(".s_Mentor_des");
-  observer.observe(mentorSection);
 
-  var letterSection = document.querySelector(".s_letter_right");
-  observer.observe(letterSection);
-};
-
-
+// 제이쿼리 ***********************************************************************************************
 $(document).ready(function () {
-  // $(".main-menu").mouseenter(function () {
-  //   $(".sub-menu li , .navbt").stop().slideDown();
-  // });
-  // $(".main-menu").mouseleave(function () {
-  //   $(".sub-menu li , .navbt").stop().slideUp();
-  // });
   $(".menu > a").click(function (event) {
     event.preventDefault(); // 기본 이벤트 방지
 
