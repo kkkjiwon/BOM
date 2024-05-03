@@ -23,6 +23,9 @@
   height: 100%;
   object-fit: cover;
 }
+.s_vistual > .sw-vistual > .swiper-wrapper > .swiper-slide a .mainannerM {
+  display: none;
+}
 /* 페이지 네이션 */
 .swiper-scrollbar {
   width: 50%;
