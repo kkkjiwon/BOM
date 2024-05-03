@@ -1,23 +1,10 @@
 @charset "utf-8";
-@media screen and (max-width : 1500px) {
-  nav
-  {width: 50%;}  
+@media screen and (max-width: 1500px) {
+  nav {
+    width: 50%;
+  }
 }
 
-@media screen and (max-width: 1250px) {
-  /* for you */
-.s_foryou_area {
-  padding: 2%;
-}  
-.s_foryou_area .s_foryou_card {
-  width: 280px;
-  max-width: 280px;
-}
-.s_foryou_area .s_foryou_card .s_foryou_card_imgBox {
-  width: 250px;
-  max-width: 250px;
-}
-}
 @media screen and (max-width: 1200px) {
   /* 헤더 */
   .header {
@@ -35,35 +22,26 @@
   .s_instagram_hide {
     display: none;
   }
-
 }
 @media screen and (max-width: 1000px) {
-  /* 첫구매 */
-  .s_foryou {
-    height: 100%;
-  }
-  .s_foryou_area {
-    gap: 50px;
-    padding-bottom: 10%;
-  }
   /* s_mentor */
   .s_Mentor_area {
-   gap:1%
+    gap: 1%;
   }
   .s_Mentor .inner {
     padding: 10% 5%;
   }
-  }
+}
 
 @media screen and (max-width: 900px) {
   nav {
     width: 60%;
   }
-    /* 배너 */
-    .s_banner_ch3 .inner {
-      flex-direction: column;
-      gap: 10px;
-    }
+  /* 배너 */
+  .s_banner_ch3 .inner {
+    flex-direction: column;
+    gap: 10px;
+  }
   /* 인스타그램 */
   .s_instagram_img_wrap {
     flex-wrap: wrap;
@@ -71,11 +49,10 @@
     align-items: center;
   }
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .s_brandAbout_ch3_tit {
     text-align: center;
   }
-  
 }
 @media screen and (max-width: 768px) {
   /* 전체 */
@@ -84,7 +61,7 @@
   }
   /* 헤더 */
   nav {
-     display: none;
+    display: none;
   }
   .xi-search {
     display: none;
@@ -116,6 +93,10 @@
     z-index: 1;
     max-width: 200px;
   }
+  /* 배너 */
+  .s_banner_ch3 {
+    margin: 50px auto;
+  }
   /* 프로그램 */
   .s_program > .sw-program {
     min-width: 250px;
@@ -133,6 +114,7 @@
     text-align: center;
   }
   /* 브랜드 소개 */
+
   .s_banner_ch3_img {
     max-width: 250px;
     width: 250px;
@@ -141,16 +123,25 @@
     font-size: 2rem;
   }
   /* 프로그램 */
-  .title-area{
+  .title-area {
     flex-direction: column;
+    padding-top: 100px;
   }
   .view-more {
-width: 100px;
-height: 40px;
-border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  /* Mentor */
+  .s_Mentor_area {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .s_Mentor_des {
+    text-align: center;
   }
 }
-@media screen and (max-width : 400px ) {
+@media screen and (max-width: 400px) {
   /* 브랜드 소개 */
   .s_brandAbout_left_tit {
     font-size: 3rem;
@@ -169,8 +160,7 @@ border-radius: 10px;
     text-wrap: wrap;
     text-overflow: ellipsis;
   } */
-  .s_program_bg_img img{
+  .s_program_bg_img img {
     min-height: 200px;
   }
-
 }
