@@ -45,11 +45,11 @@ window.onload = function () {
   });
 
   // 오버레이 클릭 시 메뉴 닫기
-  overlay.addEventListener("click", function () {
-    mbt.classList.remove("ani");
-    navMb.classList.remove("active");
-    overlay.classList.remove("active");
-  });
+  // overlay.addEventListener("click", function () {
+  //   mbt.classList.remove("ani");
+  //   navMb.classList.remove("active");
+  //   overlay.classList.remove("active");
+  // });
   // s_visual
   var swiper = new Swiper(".sw-vistual", {
     scrollbar: {
@@ -59,8 +59,9 @@ window.onload = function () {
   });
   // s_program
   var swiper = new Swiper(".sw-program", {
-    slidesPerView: 1.2,
-    spaceBetween: 0,
+    slidesPerView: 1.1,
+    spaceBetween: 10,
+    loop: true,
     breakpoints: {
       1920: {
         slidesPerView: 5,
@@ -84,7 +85,7 @@ window.onload = function () {
       },
     },
     autoplay: {
-      delay: 5000, // 슬라이드 간의 지연 시간 (밀리초)
+      delay: 2000, // 슬라이드 간의 지연 시간 (밀리초)
       disableOnInteraction: false, // 사용자 상호 작용 후 자동 재생 비활성화 여부
     },
   });

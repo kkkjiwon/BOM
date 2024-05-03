@@ -29,58 +29,50 @@
 }
 /*  브랜드 소개 ********************************************** *********************************************/
 .s_brandAbout {
-  position: relative;
   user-select: none;
+  background-color: var(--bg-color);
+  padding: 100px 0;
 }
-.s_brandAbout_logodes {
-  width: 100%;
+.inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-color);
-  position: relative;
-}
-/* 브랜드 소개 둥근 이미지 */
-.s_brandAbout_logodes .inner {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 100px 0;
+  gap: 10px;
 }
 .s_brandAbout_left {
-  color: var(--side-color);
-  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  color: var(--side-color);
+  font-family: "UhBeeSe_hyun";
 }
 .s_brandAbout_left_tit {
-  font-family: "UhBeeSe_hyun";
   font-size: 4rem;
   font-weight: bold;
-  text-transform: uppercase;
-}
-.s_brandAbout_left_tit span {
-  top: 20px;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  animation: bounce 5s infinite;  ; /* 바운스 애니메이션 적용 */
+  text-transform:capitalize;
+
 }
 .s_brandAbout_left_txt {
-  font-family: "UhBeeSe_hyun";
-  font-size: 3rem;
-  line-height: 3;
-  font-weight: bold;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .s_brandAbout_right {
-  /* background-color: lightblue; */
 }
-.s_brandAbout_right > img {
+.s_brandAbout_right img {
+  display: block;
   width: 100%;
   height: 100%;
-  max-width: 250px;
+  max-width: 200px;
+}
+.s_brandAbout_left_txt span {
+  border-radius: 50%;
+  color: var(--main-color);
 }
 /* 프로그램 시작 ********************************************** *********************************************/
 .s_program {
@@ -174,6 +166,7 @@
   width: 100%;
   /* background-color: #005baa; */
   background-color: var(--main-color);
+  margin: 100px auto;
 }
 .s_banner_ch3 > .inner {
   /* width: 100%;
@@ -198,13 +191,12 @@
   color: #fff;
   line-height: 1.52;
 }
-/* for you */
-.s_foryou {
+/* **************************************************** soon 모름 */
+.s_soon {
   width: 100%;
   height: 100vh;
-  background-color: var(--bg-color);
 }
-.s_foryou_area {
+.s_soon_area {
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -215,8 +207,7 @@
   gap: 100px 50px;
   padding: 50px 50px 100px;
 }
-
-.s_foryou_area .s_foryou_card {
+.s_soon_area .s_soon_card {
   position: relative;
   display: flex;
   justify-content: center;
@@ -227,15 +218,13 @@
   background: white;
   border-radius: 20px;
   transition: 0.5s;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 35px 80px rgba(161, 161, 161, 0.15);
 }
-
-.s_foryou_area .s_foryou_card:hover {
+.s_soon_area .s_soon_card:hover {
   height: 400px;
   cursor: pointer;
 }
-
-.s_foryou_area .s_foryou_card .s_foryou_card_imgBox {
+.s_soon_area .s_soon_card .s_soon_card_imgBox {
   position: absolute;
   top: 20px;
   width: 300px;
@@ -245,14 +234,12 @@
   overflow: hidden;
   transition: 0.5s;
 }
-
-.s_foryou_area .s_foryou_card:hover .s_foryou_card_imgBox {
+.s_soon_area .s_soon_card:hover .s_soon_card_imgBox {
   top: -100px;
   scale: 0.75;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
-
-.s_foryou_area .s_foryou_card .s_foryou_card_imgBox img {
+.s_soon_area .s_soon_card .s_soon_card_imgBox img {
   position: absolute;
   top: 0;
   left: 0;
@@ -260,8 +247,7 @@
   height: 100%;
   object-fit: cover;
 }
-
-.s_foryou_area .s_foryou_card .s_foryou_card_textBox {
+.s_soon_area .s_soon_card .s_soon_card_textBox {
   position: absolute;
   top: 252px;
   width: 100%;
@@ -271,62 +257,99 @@
   overflow: hidden;
   transition: 0.5s;
 }
-
-.s_foryou_area .s_foryou_card:hover .s_foryou_card_textBox {
+.s_soon_area .s_soon_card:hover .s_soon_card_textBox {
   top: 130px;
   height: 250px;
 }
-
-.s_foryou_area .s_foryou_card .s_foryou_card_textBox h2 {
+.s_soon_area .s_soon_card .s_soon_card_textBox h2 {
   font-size: 1.8rem;
   line-height: 2;
   font-weight: 700;
   color: var(--clr);
 }
-
-.s_foryou_area .s_foryou_card .s_foryou_card_textBox p {
+.s_soon_area .s_soon_card .s_soon_card_textBox p {
   font-size: 1.5rem;
   line-height: 1.3;
   padding: 10px;
   color: #333;
 }
-
-.s_foryou_area .s_foryou_card .s_foryou_card_textBox a {
+.s_soon_area .s_soon_card .s_soon_card_textBox a {
   position: relative;
   top: 15px;
   display: inline-block;
-  padding: 12px 25px;
-  text-decoration: none;
+  padding: 12px 30px;
+  /* text-decoration: underline; */
   background: var(--clr);
   color: white;
   font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: var(--main-en-font);
 }
-
-.s_foryou_area .s_foryou_card .s_foryou_card_textBox a:hover {
+.s_soon_area .s_soon_card .s_soon_card_textBox a:hover {
   opacity: 0.8;
 }
-@media (max-width: 480px) {
-  .s_foryou{
+@media screen and (max-width: 1250px) {
+  /* 모름 */
+  .s_soon_area {
+    padding: 50px 0 0 0;
+  }
+.s_soon_area .s_soon_card {
+  width: 280px;
+  max-width: 280px;
+}
+.s_soon_area .s_soon_card .s_soon_card_imgBox {
+  width: 250px;
+  max-width: 250px;
+}
+}
+@media screen and (max-width: 1000px) {
+  /* 모름 */
+  .s_soon {
     height: 100%;
   }
-  .s_foryou_area .s_foryou_card {
-      width: 230px;
-      border-radius: 15px;
+  .s_soon_area {
+    padding-bottom: 10%;
+    padding: 50px 50px 100px;
   }
-
-  .s_foryou_area .s_foryou_card .s_foryou_card_imgBox {
-      width: 185px;
+}
+@media (max-width: 730px) {
+  .s_soon_area .s_soon_card {
+    width: 500px;
+    max-width: 500px;
+  }
+  .s_soon_area .s_soon_card:hover {
+    height:350px;
+    cursor: pointer;
+  }
+  .s_soon_area .s_soon_card .s_soon_card_imgBox {
+    width: 400px;
+    max-width: 400px;
+  }
+  .s_soon_area .s_soon_card .s_soon_card_textBox {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+    /* 모름 */
+  .s_soon{
+    height: 100%;
+  }
+  .s_soon_area {
+    padding: 50px 10px 100px;
+  }
+  .s_soon_area .s_soon_card .s_soon_card_imgBox {
+      width: 300px;
       border-radius: 10px;
   }
-  .s_foryou_area .s_foryou_card .s_foryou_card_textBox h2{
-    font-size: 2rem;
+  .s_soon_area .s_soon_card .s_soon_card_textBox{
+    padding: 0;
   }
-  .s_foryou_area .s_foryou_card .s_foryou_card_textBox p {
-      font-size: 1.8rem;
-  }
-
-  .s_foryou_area .s_foryou_card .s_foryou_card_textBox a {
-      font-size: 0.9rem;
+}
+@media (max-width: 340px) {
+  .s_soon_area {
+  padding: 50px 0 100px 0;
   }
 }
 
@@ -450,9 +473,10 @@
 .s_Mentor {
   font-family: var(--main-ko-font);
   background-color: #fffcf6;
+  padding: 100px auto;
 }
 .s_Mentor .inner {
-  /* background-color: pink; */
+  padding-top: 2% ;
 }
 .s_Mentor_area {
   display: flex;
@@ -460,7 +484,6 @@
   align-items: center;
   gap: 10%;
 }
-
 .s_Mentor_des .tit {
   font-weight: 600;
   font-size: 3rem;
@@ -481,7 +504,7 @@
   margin-top: 10%;
 }
 .s_Mentor_area_right {
-  width: 330px;/
+  width: 300px;
 }
 .s_Mentor_area_right img {
   width: 100%;
