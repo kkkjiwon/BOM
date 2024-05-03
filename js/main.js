@@ -59,7 +59,7 @@ window.onload = function () {
   });
   // s_program
   var swiper = new Swiper(".sw-program", {
-    slidesPerView: 1.1,
+    slidesPerView: 1.2,
     spaceBetween: 10,
     loop: true,
     breakpoints: {
@@ -72,16 +72,16 @@ window.onload = function () {
         spaceBetween: 10,           
       }   ,                 
       1000: {
-        slidesPerView: 3.8,
-        spaceBetween: 10,
+        slidesPerView: 3.5,
+        spaceBetween: 20,
       },
       800: {
-        slidesPerView: 2.2,
-        spaceBetween: 10,
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
       500: {
-        slidesPerView: 2,
-        spaceBetween: 10,
+        slidesPerView: 1.5,
+        spaceBetween: 20,
       },
     },
     autoplay: {
@@ -90,40 +90,6 @@ window.onload = function () {
     },
   });
 }
-// s_recommend
-var swiper = new Swiper(".sw-recommend", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 3,
-    slideShadows: true
-  },
-  loop: true,
-  pagination: {
-    el: ".sw-recommend-pg",
-    clickable: true
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2
-    },
-    768: {
-      slidesPerView: 1
-    },
-    1024: {
-      slidesPerView: 2
-    },
-    1560: {
-      slidesPerView: 3
-    }
-  }
-});
-
-
 // 제이쿼리 ***********************************************************************************************
 $(document).ready(function () {
   $(".menu > a").click(function (event) {
