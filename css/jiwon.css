@@ -343,7 +343,6 @@
   cursor: pointer;
 }
 .fa-heart {
-  font-family: var(--side-ko-font);
   background-color: rgba(0, 0, 0, 0.5);
 }
 .j_top .heart .fas:before {

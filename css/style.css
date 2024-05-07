@@ -64,7 +64,7 @@ body {
   text-align: center;
 }
 .title2 {
-  font-family: 'S-CoreDream-3Light';
+  font-family: var(--main-ko-font);
   font-size: 1.8rem;
   line-height: 4;
   letter-spacing: 0.1rem;

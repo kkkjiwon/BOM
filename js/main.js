@@ -29,7 +29,7 @@ window.onload = function () {
   // 상단 스크롤 기능
   const navMb = document.querySelector(".nav-mb");
   const overlay = document.querySelector(".overlay");
-  
+
   // 햄버거 버튼 클릭 이벤트
   mbt.addEventListener("click", function () {
     const state = this.classList.contains("ani");
@@ -44,17 +44,11 @@ window.onload = function () {
     }
   });
 
-  // 오버레이 클릭 시 메뉴 닫기
-  // overlay.addEventListener("click", function () {
-  //   mbt.classList.remove("ani");
-  //   navMb.classList.remove("active");
-  //   overlay.classList.remove("active");
-  // });
   // s_visual
   var swiper = new Swiper(".sw-vistual", {
-    scrollbar: {
-      el: ".swiper-scrollbar",
-      hide: true,
+    autoplay: {
+      delay: 2000, // 슬라이드 간의 지연 시간 (밀리초)
+      disableOnInteraction: false, // 사용자 상호 작용 후 자동 재생 비활성화 여부
     },
   });
   // s_program
@@ -100,5 +94,12 @@ $(document).ready(function () {
 
     // 화살표 회전 토글
     $(this).find('.material-symbols-outlined').toggleClass('active');
+  });
+  // 하트 채움
+  $(document).ready(function () {
+    $(".heart").click(function () {
+      event.preventDefault();
+      $(this).toggleClass("far fas");
+    });
   });
 });
