@@ -110,6 +110,7 @@
   max-height: 300px;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+  position: relative;
 }
 .s_program_bg_img img {
   display: block;
@@ -118,6 +119,20 @@
 
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+
+}
+.s_program_bg_img > .heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1.8rem;
+  color: #eeeeee;
+  cursor: pointer;
 }
 .s_program > .sw-program > .swiper-wrapper > .swiper-slide:hover img {
   transform: scale(1.2);
@@ -391,7 +406,7 @@
 
 .sw-recommend .swiper-slide h2 {
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-ko-font);
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.4;
@@ -402,7 +417,7 @@
 
 .sw-recommend .swiper-slide p {
   color: #dadada;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-ko-font);
   font-weight: 300;
   padding: 0 1.563rem;
   line-height: 1.6;
