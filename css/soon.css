@@ -495,7 +495,7 @@
 /* 이달의 영상 시작 ********************************************** *********************************************/
 .s_Mentor {
   font-family: var(--main-ko-font);
-  background-color: #fffcf6;
+  background-color: #FFBC6C;
   padding: 100px auto;
 }
 .s_Mentor .inner {
@@ -511,6 +511,7 @@
   font-weight: 600;
   font-size: 3rem;
   line-height: 1.2;
+  color: #fff;
 }
 .s_Mentor_des .name {
   font-size: 3rem;
