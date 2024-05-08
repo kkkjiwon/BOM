@@ -1,17 +1,4 @@
 window.onload = function () {
-  const navBar = document.querySelector("header");
-  let prevScrollPos = window.scrollY;
-  window.addEventListener("scroll", function () {
-    let currScrollPos = window.scrollY;
-  
-    if (currScrollPos > prevScrollPos) {
-      navBar.style.transform = `translateY(-105%)`;
-    } else {
-      navBar.style.transform = `translateY(0%)`;
-    }
-  
-    prevScrollPos = currScrollPos;
-  });
   //상단 스크롤 기능
   const header = document.querySelector(".header");
   const mbt = document.querySelector(".mbt");
