@@ -23,15 +23,6 @@
     display: none;
   }
 }
-@media screen and (max-width: 1000px) {
-  /* s_mentor */
-  .s_Mentor_area {
-    gap: 1%;
-  }
-  .s_Mentor .inner {
-    padding: 10% 5%;
-  }
-}
 
 @media screen and (max-width: 900px) {
   nav {
@@ -138,20 +129,11 @@
     height: 40px;
     border-radius: 10px;
   }
-  /* Mentor */
-  .s_Mentor_area {
-    flex-direction: column-reverse;
-    gap: 30px;
-    padding-bottom: 30px;
-  }
-  .s_Mentor_des {
-    text-align: center;
-  }
 }
 @media screen and (max-width: 740px) {
- .s_soon_card:last-child{
-  display: none;
- }
+  .s_soon_card:last-child {
+    display: none;
+  }
 }
 @media screen and (max-width: 400px) {
   /* 브랜드 소개 */
