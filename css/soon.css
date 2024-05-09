@@ -494,44 +494,17 @@
 }
 /* 이달의 영상 시작 ********************************************** *********************************************/
 .s_Mentor {
-  font-family: var(--main-ko-font);
-  background-color: #FFBC6C;
-  padding: 100px auto;
+  background-color: #FFEFB1;
+  padding: 2% 1% 0;
 }
 .s_Mentor .inner {
-  padding-top: 2%;
-}
-.s_Mentor_area {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10%;
 }
-.s_Mentor_des .tit {
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 1.2;
-  color: #fff;
-}
-.s_Mentor_des .name {
-  font-size: 3rem;
-  font-weight: bold;
-}
-.s_Mentor_des .name > span {
-  font-size: 1.8rem;
-}
-.s_Mentor_des .tit2 {
-  font-size: 1.8rem;
-  padding: 3rem 0 0.5rem;
-}
-.s_Mentor_des > .s_btn {
-  margin-top: 10%;
-}
-.s_Mentor_area_right {
-  width: 300px;
-}
-.s_Mentor_area_right img {
+.s_Mentor img {
   width: 100%;
+  height: 100%;
 }
 
 /* 편지 시작 ********************************************** *********************************************/
