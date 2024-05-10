@@ -22,8 +22,6 @@ li {
 a {
   text-decoration: none;
 }
-body {
-}
 .t_wrap {
   background-color: #fff8e9;
 }
@@ -139,9 +137,6 @@ html {
   text-align: center;
 
   border-bottom: 1px solid #d9d9d9;
-}
-.t_in-contents{
-
 }
 .t_in-bottom {
   width: 95%;
